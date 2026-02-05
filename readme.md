@@ -1,1 +1,2 @@
-This is the project of the course of **Meta Android App Capstone**
+### **Meta Android App Capstone**
+This project is part of the Android App Capstone Course instructed by Meta on Coursera Platform.
