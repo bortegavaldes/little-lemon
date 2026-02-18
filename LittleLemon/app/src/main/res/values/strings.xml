@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">LittleLemon</string>
+    <string name="app_name">Little Lemon</string>
+    <string name="home_banner_description">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</string>
 </resources>

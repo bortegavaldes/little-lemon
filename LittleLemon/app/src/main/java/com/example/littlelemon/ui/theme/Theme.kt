@@ -9,18 +9,26 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = primary_green,
+    inversePrimary = primary_yellow,
+    surface = Color.Black,
+    inverseSurface = Color.White,
+    onSurface = grey_dark,
+    inverseOnSurface = grey_light
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = primary_yellow,
+    inversePrimary = primary_green,
+    surface = Color.White,
+    inverseSurface = Color.Black,
+    onSurface = grey_light,
+    inverseOnSurface = grey_dark,
+    background = Color.White
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -41,10 +49,11 @@ fun LittleLemonTheme(
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+        /*
+           dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
+        }*/
 
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
