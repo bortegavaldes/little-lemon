@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.compose.runtime.livedata)
     ksp(libs.androidx.room.compiler)
+    implementation(libs.glide.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

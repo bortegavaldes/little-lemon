@@ -14,6 +14,7 @@ ktor = "3.0.0"
 room = "2.6.1"
 ksp = "2.0.21-1.0.25"
 runtimeLivedata = "1.10.3"
+glideCompose = "1.0.0-alpha.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 # KTX para soporte de Corrutinas (muy recomendado)
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+glide-compose = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glideCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

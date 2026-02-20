@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
             LittleLemonTheme {
 
                 val navController = rememberNavController()
-                Navigation(navController)
+                Navigation(navController, database.menuItemDao())
             }
         }
 
@@ -71,6 +71,9 @@ class MainActivity : ComponentActivity() {
 fun LittleLemonPreview() {
     LittleLemonTheme {
         val navController = rememberNavController()
-        Navigation(navController)
+        Navigation(
+            navController,
+            menuDao = {} as MenuItemDao
+        )
     }
 }

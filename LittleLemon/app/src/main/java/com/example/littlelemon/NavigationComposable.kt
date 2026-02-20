@@ -9,7 +9,8 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun Navigation(
-    navController: NavHostController
+    navController: NavHostController,
+    menuDao: MenuItemDao
 ){
     // 1. Obtenemos el contexto para acceder a SharedPreferences
     val context = LocalContext.current
@@ -30,7 +31,7 @@ fun Navigation(
             Onboarding(navController)
         }
         composable(Home.route) {
-            Home(navController)
+            Home(navController, menuDao)
         }
         composable(Profile.route) {
             Profile(navController)
