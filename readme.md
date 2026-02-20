@@ -1,2 +1,2 @@
 ### **Meta Android App Capstone**
-This project is part of the Android App Capstone Course instructed by Meta on Coursera Platform.
+This is the final project of the Android App Capstone Course instructed by Meta on Coursera Platform.
